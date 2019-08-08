@@ -1,0 +1,18 @@
+class stack
+{
+public:
+    char data[100];
+    int top;
+};
+
+//codes for push,pop,top, empty
+
+int main()
+{
+    //object s declared
+    stack s;
+    s.top=-1;
+
+    //using stack for solving problems
+    return 0;
+}
