@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+class point   //class point
+{public :
+    int x,y;    //data members
+};
+
+class rect     //rect uses point
+{
+public:
+    point TL;   //top left
+    point BR;   //bottom right
+};
+
+int main()
+{
+    rect r ={{0,2},{5,7}};
+    //r.TL <--{0,2}; r.BR <--{5,7}
+    //r.TL.x <-- 0; r.TL.y <-- 2
+
+    //rectangle object r accessed
+    cout <<"[("<<r.TL.x<<" "<< r.TL.y <<")"<<" "<<"("
+    <<r.BR.x<<" "<<r.BR.y<<")]"<<endl;
+
+    return 0;
+
+}
